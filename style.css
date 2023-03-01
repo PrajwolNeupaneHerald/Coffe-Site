@@ -1,0 +1,322 @@
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-main: #1a120b;
+  --primary-light: #1d140c;
+  --secondary-main: #3c2a21;
+  --secondary-light: #49352b;
+  --text-main: #d5cea3;
+  --text-light: #e5e5cb;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 600;
+}
+h3 {
+  font-weight: 500;
+}
+h4 {
+  font-weight: 400;
+}
+h5,
+p {
+  font-weight: 300;
+}
+nav {
+  width: 90%;
+  padding: 10px 5%;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(var(--primary-main), var(--primary-light));
+  color: var(--text-light);
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+.nav-links {
+  align-items: center;
+  gap: 8vw;
+  font-size: 18px;
+}
+.nav-links a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-light);
+}
+.coffee-icon {
+  font-size: 60px;
+}
+.logos {
+  align-items: center;
+  gap: 20px;
+}
+.logo {
+  font-size: 30px;
+  line-height: 90%;
+}
+.nav-links a:hover {
+  color: var(--text-main);
+}
+.header {
+  background: linear-gradient(var(--primary-light), var(--secondary-main));
+  width: 100%;
+  height: 70vh;
+  justify-content: space-between;
+  gap: 10%;
+}
+.header-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-info {
+  width: 60%;
+  padding: 100px 5%;
+  gap: 20px;
+}
+.header-info h3 {
+  font-size: 30px;
+  line-height: 100%;
+  color: var(--text-main);
+}
+.header-info h4 {
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--text-light);
+}
+.header-btn {
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 20px;
+  width: 200px;
+  border: none;
+  padding: 5px 0px;
+  background-color: var(--text-light);
+  cursor: pointer;
+}
+.header-btn:hover {
+  background-color: var(--text-main);
+}
+.header-info a {
+  color: var(--primary-main);
+  text-decoration: none;
+  width: 200px;
+  border-radius: 20px;
+}
+.menu {
+  padding: 110px 5%;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(
+    var(--secondary-main),
+    var(--secondary-light),
+    var(--primary-light)
+  );
+  align-items: center;
+  gap: 80px;
+}
+.menu h3 {
+  font-size: 40px;
+  color: var(--text-light);
+}
+.grid {
+  display: grid;
+  width: 85%;
+  margin: 0px auto;
+  grid-template-columns: auto auto auto auto;
+  grid-row-gap: 30px;
+}
+.grid-item {
+  width: 200px;
+  height: 250px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.overlay {
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  transition: 0.25s;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay h3 {
+  color: var(--text-light);
+  font-size: 30px;
+}
+
+.grid-item:hover .overlay {
+  opacity: 1;
+  background-color: rgb(22, 22, 22, 0.6);
+}
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.grid-item h4 {
+  font-size: 20px;
+  color: var(--text-main);
+}
+.grid-item h5 {
+  font-size: 16px;
+  color: var(--text-light);
+}
+.history {
+  width: 84%;
+  height: 100%;
+  padding: 2.5% 8%;
+  background: linear-gradient(
+    var(--primary-light),
+    var(--secondary-main),
+    var(--primary-light)
+  );
+  gap: 100px;
+}
+.history h2 {
+  font-size: 30px;
+  color: var(--text-main);
+}
+.history p {
+  font-size: 18px;
+  color: var(--text-light);
+}
+.history-data h2 {
+  margin-bottom: 40px;
+}
+.history-data img {
+  width: 50%;
+  float: left;
+  margin-right: 2.5%;
+}
+.about-data {
+  gap: 40px;
+}
+.images {
+  align-items: center;
+  justify-content: space-between;
+}
+.images img {
+  width: 30%;
+  height: 200px;
+  object-fit: cover;
+}
+.contact {
+  width: 84%;
+  height: 100%;
+  padding: 2.5% 8%;
+  background: linear-gradient(
+    var(--primary-light),
+    var(--secondary-main),
+    var(--secondary-main),
+    var(--primary-light)
+  );
+  gap: 20px;
+}
+.contact h2 {
+  font-size: 30px;
+  color: var(--text-main);
+}
+.contact h4 {
+  font-size: 18px;
+  color: var(--text-main);
+}
+.contact p {
+  font-size: 16px;
+  color: var(--text-main);
+}
+form {
+  gap: 20px;
+}
+form label {
+  font-weight: 400;
+  color: var(--text-light);
+  font-size: 16px;
+}
+form input {
+  width: 40%;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+}
+form textarea {
+  width: 70%;
+  height: 200px;
+  border-radius: 0px;
+  resize: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+}
+form button {
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 20px;
+  width: 200px;
+  border: none;
+  padding: 5px 0px;
+  background-color: var(--text-light);
+  cursor: pointer;
+  color: var(--primary-main);
+}
+form button :hover{
+    background-color: var(--text-main);
+}
+footer {
+  width: 80%;
+  height: 60vh;
+  background: linear-gradient(var(--primary-light), var(--primary-main));
+  padding: 2% 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logos {
+  color: var(--text-light) !important;
+  align-items: center;
+  gap: 20px;
+}
+.connect {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.connect h3 {
+  font-size: 20px;
+  color: var(--text-light);
+}
+.icons {
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.icons h4 {
+  font-size: 20px;
+  color: var(--text-light);
+}
+.copy {
+  font-size: 16px;
+  color: var(--text-light);
+}
+.footer-coffee-icon {
+  font-size: 120px;
+}
+.footer-icons {
+  font-size: 30px;
+  color: var(--text-light);
+}
